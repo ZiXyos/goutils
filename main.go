@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/ZiXyos/goutils/pkg/linked_list"
 )
 
@@ -15,10 +13,11 @@ func main() {
 	}
 
 	list.AddElemAtFront(10)
-	list.AddElemAtFront(100)
-	list.AddElemAtFront(1000)
-	list.AddElemAtFront(10000)
+	list.AddElemtAtBack(100)
+	list.AddElemtAtBack(1000)
+	list.AddElemAtFront(0)
+	list.AddElemAtFront("list")
 
+	list.Debug()
 	list.Dump()
-	fmt.Print(list.GetSize())
 }
